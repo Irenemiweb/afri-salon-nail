@@ -1,0 +1,840 @@
+/*imagen para nueva categoria*/
+
+    .image-selector {
+        height: 150px;
+        border: 2px dotted #ccc;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        background-color: #f9f9f9;
+        overflow: hidden;
+        transition: background-color 0.3s ease;
+    }
+    .image-selector:hover {
+        background-color: #f0f0f0; /* Cambio de color al pasar el mouse */
+    }
+@media (min-width: 980px) { /*solo pantallas grandes*/
+    .flatpickr-calendar.open {
+        /* left: 61vh!important;  */
+    }
+}
+.customOpenModalCancelServiceButton{
+    --bs-btn-close-focus-shadow: transparent!important;
+}
+/*calendario solo mes*/
+.card-header-title svg{
+    cursor: pointer;
+}
+.cta-section button {
+    margin-bottom: 10px; /* Espacio de 10px entre los botones */
+}
+/* Estilo para los meses en cuadrícula */
+.flatpickr-monthSelect-months {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 4 columnas */
+    grid-gap: 10px; /* Espacio entre los meses */
+}
+.flatpickr-innerContainer{
+padding: 1rem;
+}
+/* Estilo para cada celda de mes */
+/* Estilo para cada celda de mes */
+.flatpickr-monthSelect-month {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Animación suave */
+    border-radius: 10px;
+}
+
+/* Efecto de hover */
+.flatpickr-monthSelect-month:hover {
+    background-color: #f0f0f0; /* Color gris claro al pasar el ratón */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra más fuerte al pasar el ratón */
+}
+
+/* Cambia el color de fondo al seleccionar un mes */
+.flatpickr-monthSelect-month.selected {
+    background-color: #007bff;
+    color: white;
+}
+/*------------------------*/
+/* Si no quieres que el último botón tenga margen, puedes agregar este selector */
+.cta-section button:last-child {
+    margin-bottom: 0; /* El último botón no tendrá margen inferior */
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+}
+
+.spinner {
+    border: 8px solid #f3f3f3; /* Color de fondo */
+    border-top: 8px solid #3498db; /* Color del spinner */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Animación */
+}
+.loaderWhite {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   background-color: rgb(255, 255, 255); /* Fondo semitransparente */
+    backdrop-filter: blur(3px);
+}
+.spinnerGreen {
+    border: 8px solid #c4c2c2; /* Color de fondo */
+    border-top: 8px solid #d6a769; /* Color del spinner */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Animación */
+}
+/* Animación de rotación */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/*fondo del modal*/
+.modal-backdrop {
+    z-index: 1045 !important;
+  }
+  #cancelReservaModal .modal-header{
+    border-bottom: none!important;
+  }
+  #cancelReservaModal .modal-footer{
+    border-top: none!important;
+  }
+  #cancelReservaModal h1{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+/*--------*/
+.carousel_horas.carrusel-contenedor, .carousel_dias.carrusel-contenedor {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    margin: 0 auto;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+
+.carousel_horas .carrusel{
+    min-height: 2.5rem;
+  position: relative;
+  top: -36px;
+}
+.carousel_horas.carrusel-contenedor{
+    height: 3rem;
+    max-width: 700px;
+    margin-bottom: 1.5rem;
+}
+.carousel_dias.carrusel-contenedor{
+    height: 6rem;
+    max-width: 569px;
+}
+.carousel_dias .carrusel{
+    position: relative;
+    top: -2rem;
+  min-height: 5.3rem;
+}
+button.flecha{
+    zoom: 1;
+  display: inline;
+  padding: 10px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  filter: Alpha(Opacity=50);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .06);
+  background: white;
+  border: none;
+  /* position: absolute; */
+  position: relative;
+}
+button.flecha:hover{
+    filter: Alpha(Opacity=100);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.36);
+}
+button.flecha.previ{
+    left: -328px;
+}
+button.flecha.nextt{
+    right: -324px;
+  top: -76px;
+}
+.carousel_dias button.flecha.previ{
+    top: 49px;
+}
+
+.carousel_horas .carrusel, .carousel_dias .carrusel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+  max-width: 600px;
+  height: 100%;
+}
+
+.carousel_horas .carrusel-inner, .carousel_dias .carrusel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.dia{
+    width: 4.5rem;
+    height:5.3rem;
+}
+.hora{
+    width: 91px;
+}
+.hora, .dia {
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px
+}
+/*span que muestra hora y dia*/
+.hora .nombre-hora, .dia .nombre-dia {
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+ /*desenfocar fondo*/
+ .offcanvas-backdrop.fade {
+    opacity: inherit!important;
+    background: rgba(0, 0, 0, 0.76) !important;
+    backdrop-filter: blur(3px);
+  }
+  .contenedorOfcanvasNewReservCalendar .offcanvas-backdrop.fade, .contenedorReservsCalendear0145 .offcanvas-backdrop.fade {
+    opacity: inherit!important;
+    background: rgb(0 0 0 / 15%) !important;
+    backdrop-filter: blur(0px);
+  }
+  /* #newReservCalendar + .offcanvas-backdrop.fade{
+    display: none;
+    background: rgb(0 0 0 / 21%) !important;
+    backdrop-filter:none!important;
+} */
+
+ /*sábado y domingo desavilitado*/
+ .disabled {
+    color: grey;
+    /* pointer-events: none; */
+    opacity: 0.5;
+    line-height: 13px !important;
+}
+.dia:not(.disabled):hover {
+    cursor: pointer;
+}
+.dia.disabled, .hora.disabled {
+    cursor: not-allowed;
+}
+.empleadoDisabled{
+    cursor: not-allowed;
+}
+.botonDisabled{
+    cursor: not-allowed!important;
+    opacity: 0.5;
+}
+ /*tiempo y fecha activos*/
+ .date_active, .time_active{
+    background-color: #218cac;
+    /* background-color: #3d795a; */
+    color: #fff!important;
+    font-weight: 600;
+    box-shadow: 1px 2px 8px -2px rgba(33,140,172, .45);
+    border: 1px solid #d5d5d5;
+}
+
+ /*div title time*/
+ .title_time{
+    width: 100%;
+    text-align: center;
+    color: #767676;
+    padding: calc(0.5 / 2) 0;
+    border-radius: 8px;
+    width: 100%;
+
+ }
+ .title_time2{
+    margin: 0 auto;
+    background: rgba(23,23,23, .05);
+    width: 70%;
+    border-radius: 8px;
+ }
+/*hr separador*/
+.div_separator{
+    width: 100%;
+  height: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.date_time_separator{
+    border-top: rgba(23,23,23,0.1)!important;
+    background-color: rgba(23, 23, 23, 0.47);
+}
+.card-header-title {
+    flex: 1;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+/*tarjeta servicio*/
+.servicioContenedor{
+    width: 100%;
+  max-width: 697px;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.pos-relative{
+position: relative;
+}
+.boxBox{
+    background: rgba(23,23,23, .05);
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+}
+.divided, .spaced {
+    --spaced-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.line-break-anywhere {
+    line-break: anywhere;
+}
+.text-right{
+    text-align: right;
+}
+.font-h4 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+.text-gray {
+    color: #767676;
+}
+.text-h5 {
+    font-size: .875rem;
+    line-height: 1.375rem;
+}
+.divided>:not(:first-child) {
+    border-top: 1px solid rgba(23, 23, 23, 0.06);
+}
+.divided>* {
+    padding:1rem 0;
+}
+.divided>:last-child, .spaced>:last-child {
+    padding-bottom: 0;
+}
+.b-flex-fill {
+    flex: 1 !important;
+}
+.b-font-h5 {
+    font-size: 0.875rem !important;
+}
+.botonChangeEmple {
+    border: 1px solid #d5d5d5;
+    text-align: center;
+    padding: 5px 16px;
+    font-size: 14px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    background-color:#f8fafc ;
+    font-weight: 400;
+    font-family: 'gualazonF';
+    font-size: 0.875rem;
+    height: 2rem;
+}
+/*enlace más servicios*/
+.add-more {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    transition: color .3s;
+    cursor: pointer;
+}
+.enlaceMasServicio{
+    color: rgb(33,140,172);
+    text-decoration: none;
+}
+.add-more .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: .25rem;
+    transition: transform .3s;
+}
+.icon {
+    line-height: 1;
+}
+/*card footer*/
+.card-footer-sticky {
+    z-index: 3;
+    position: sticky;
+    bottom: 0;
+    background: inherit;
+}
+.card-footerTotal {
+    padding: calc(3rem - 1em) 3.5rem;
+    border-top: 1px solid rgba(23,23,23,0.06);
+    width: 100%;
+    max-width: 697px;
+    margin: 0 auto;
+    background-color: #f8fafc;
+}
+.flextEnd
+{
+    justify-content: flex-end;
+}
+.text-right{
+    text-align: right;
+}
+.font-h5{
+    font-size: .875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+}
+.font-h0 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+}
+/*botón continuar grande verde*/
+.confirm-button {
+    margin-top: 14px;
+}
+shadow:hover {
+    box-shadow: 0 4px 6px 0 rgba(33,140,172, .3);
+}
+.button-block {
+    display: flex;
+    width: 100%;
+}
+.button-lg {
+    padding: 0 2rem;
+    --booksy-widget-button-font-size: 1rem;
+    --booksy-widget-button-height: 3rem;
+}
+.button-primary-salon {
+    color: #fff;
+    background-color: rgb(33,140,172);
+}
+.button-white-salon {
+    color: black;
+    background: #f8fcfa;
+  }
+.button {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 3rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(23,23,23,0.1);
+    font: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: opacity .3s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+/*versión movil*/
+@media only screen and (max-width: 900px)
+{
+    .carousel_horas .carrusel, .carousel_dias .carrusel {
+        overflow: scroll!important;
+      }
+      button.flecha.nextt, button.flecha.previ{
+        visibility: hidden;
+      }
+      .carousel_dias.carrusel-contenedor {
+
+        margin-top: inherit;
+      }
+      #offcanvasBottomReserva1 .offcanvas-header{
+        margin-bottom: 0px!important;
+      }
+}
+.hora:hover
+{
+    cursor: pointer;
+}
+/*modal select empleado*/
+.py-2xl {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.divided-lg, .spaced-lg {
+    --spaced-gap: 1.5rem;
+}
+.divided, .spaced {
+    --spaced-gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.divided>:first-child, .spaced>:first-child {
+    padding-top: 0;
+}
+.divided>* {
+    padding: 1.5rem 0;
+}
+.divided>*, .spaced>* {
+    /* padding: calc(1.5rem / 2) 0; */
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.items-center {
+    align-items: center;
+}
+.row {
+    --gutter-x: 1rem;
+    --gutter-y: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(1rem* -1);
+    margin-right: calc(1rem / -2);
+    margin-left: calc(1rem / -2);
+}
+.col-auto {
+    flex: 0 0 auto;
+    width: auto;
+}
+/*avatar, cualquiera cualquier empleado*/
+.icon-avatar-empty:not(.avatar-selected), .icon-ff-car:not(.avatar-selected), .icon-ff-paw:not(.avatar-selected) {
+    box-shadow: none;
+}
+.avatar-rounded {
+    border-radius: 40px!important;
+}
+
+.avatarEmpleado, .avatarEmpleadoAdd {
+
+    display: inline-flex;
+    box-shadow: 0 0 0 1px rgba(23,23,23, 0.06), 1px 4px 10px -2px rgba(0, 0, 0, .12);
+    background: #fff;
+    border-radius: .5rem;
+    width: 40px;
+    height: 40px;
+    background: no-repeat 50% / cover;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+/*texto del icono cualquiera*/
+.mb-xs {
+    margin-bottom: .25rem;
+}
+.text-h4 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+/*texto verde de disponivilidad positiva*/
+.text-success {
+    color: #00be70;
+}
+
+.font-h7, .h7, .subtext {
+    font-size: .6875rem;
+    line-height: 1rem;
+    font-weight: 400;
+}
+.h7, .subheader, .subtext {
+    color: rgba(23 , 23, 23, 0.7);
+    font-size: .75rem;
+    line-height: 1rem;
+}
+/*primer empleado */
+.avatar-selected:not(.avatar-empty) {
+    box-shadow: 0 0 0 1.5px #218cac, inset 0 0 0 1px #fff;
+}
+.avatar-selected {
+    box-shadow: 0 0 0 1px rgba(23,23,23, 0.06), 1px 4px 10px -2px rgba(0, 0, 0, .12), 0 0 0 2px #fff, 0 0 0 3.5px #218cac, inset 0 0 0 1.5px #fff;
+    position: relative;
+}
+/*check avatar seleccionado*/
+.avatar-selected:after {
+    content: "";
+    position: absolute;
+    width: 24%;
+    height: 24%;
+    min-width: .5rem;
+    min-height: .5rem;
+    top: 0;
+    right: 0;
+    background: #218cac url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' stroke-width='3' stroke='%23fff' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 12 5 5L20 7'/%3E%3C/svg%3E") 50% / 100%;
+    border-radius: 5rem;
+    box-shadow: 0 0 0 1.5px #fff;
+}
+/*imagen del empleado seleccionado en la reserva*/
+.b-mr-1 {
+    margin-right: .25rem !important;
+}
+.avatar-sm {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*revisar y confirmar servicio*/
+.card-header+.card-body {
+    padding-top: 0;
+}
+.b-pb-0 {
+    padding-bottom: 0 !important;
+}
+.card-body {
+    padding: calc(3rem - .5rem) 3.5rem;
+}
+.mb-lg {
+    margin-bottom: 1.5rem;
+}
+.text-center {
+    text-align: center;
+}
+.font-normal {
+    font-weight: 400;
+}
+.font-h1, .font-h2{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+}
+.bookingDate[data-v-5fc33602] {
+    text-transform: capitalize;
+}
+.text-muted {
+    color: rgba(23 , 23, 23, 0.7);
+}
+/*la parte gris de revisar y confirmar*/
+.boxBox {
+    background: rgba(23,23,23, .05);
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.row>* {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(1rem / 2);
+    padding-left: calc(1rem / 2);
+    margin-top: 1rem;
+}
+.text-lightgray {
+    color: #9f9f9f;
+}
+/*
+text area
+*/
+.form-group {
+    --form-control-focus-color: 33,140,172;
+    --form-control-padding-x: 1rem;
+    --form-control-padding-y: 1rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border: 1px solid rgba(23, 23, 23, 0.1);
+    border-radius: .5rem;
+}
+.form-group .form-icon {
+    position: absolute;
+    left: .25rem;
+}
+.leave-note-icon[data-v-5fc33602] {
+    top: calc(50% - 1rem);
+}
+.form-icon {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(23,23,23, .7);
+}
+.form-icon .icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+.form-group .form-icon+.form-controlText {
+    padding-left: 2.25rem;
+}
+textarea.form-controlText {
+    min-height: 3.5rem;
+    max-height: 12rem;
+    resize: none;
+    overflow: hidden;
+}
+.form-control-with-icon {
+    padding-left: 2.5rem;
+    padding-top: 1rem;
+}
+.form-control-borderless, .form-control-muted {
+    border-color: transparent;
+}
+.form-controlText {
+    --form-control-focus-color: 33, 140, 172;
+    display: block;
+    width: 100%;
+    height: 2rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* border: 1px solid rgba(23, 23, 23, 0.1); */
+    font: inherit;
+    font-size: .875rem;
+    line-height: 1.375rem;
+    /* padding: calc(.5rem - 1px) .75rem; */
+    outline: none;
+    border-radius: .5rem;
+    background: rgb(255,255,255);
+    color: rgb(23,23,23);
+}
+.form-controlText:focus{
+    border: 1px solid rgba(23, 23, 23, 0.1);
+    border: 2px solid rgb(33, 140, 172);
+}
+.text-h1, .text-h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.font-normal {
+    font-weight: 400;
+}
+.b-mr-2 {
+    margin-right: .5rem !important;
+}
+/*parte total pagar*/
+.card-body+.card-body {
+    border-top: 1px solid rgba(23, 23, 23, 0.06);
+}
+.py-md {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.mt-xl {
+    margin-top: 2rem;
+}
+.card-body {
+    padding: calc(var(--card-padding-y) - .5rem) var(--card-padding-x);
+}
+.font-h0, .h0 {
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+}
+/*cita confirmada*/
+.card-header {
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+}
+.card-header-close {
+    margin-left: auto;
+}
+.card-header-close {
+    width: 3rem;
+    height: 2rem;
+    margin: 0 .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    transition: opacity .3s;
+}
+.card-header-back .icon, .card-header-close .icon {
+    transition: transform .3s ease-in-out;
+}
+.mt-2xl {
+    margin-top: 3rem;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.mt-lg {
+    margin-top: 1.5rem;
+}
+.m-0 {
+    margin: 0;
+}
+.pb-3xl {
+    padding-bottom: 4rem;
+}
+.mt-xs {
+    margin-top: .25rem;
+}
+.gold-background
+{
+    border-image: url('./../../storage/tarjetas-servicios/fondo-dorado.jpg') 30 stretch;
+    border-image-slice:
+    42 42 42 42;
+    border-image-width:
+    10px 10px 10px 10px;
+    border-image-outset:
+    0px 0px 0px 0px;
+    /* border-image-repeat:
+    round round; */
+    /* border-image-source:
+    url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-6.svg"); */
+
+}
+.progress-bar
+{
+    /* display: none!important; */
+}

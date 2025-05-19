@@ -1,0 +1,552 @@
+/* buggy flipping was fixed on mobile ✔ but its not mobile friendly */
+/* overflow fixed when height gets smaller✔ */
+/* checkboxes got functionality✔ with pure css */
+/* inspired by https://codepen.io/FlorinPop17/pen/vPKWjd */
+/* Estilos para el loader */
+
+
+
+
+/*noruto*/
+ /* @import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Rubik+Vinyl&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap'); */
+        :root {
+            /*--main-bg-color: lightseagreen;  #e91e63  #673ab7 #9C27B0*/
+            --main-bg-color: #89BCFE;
+        }
+        span.loginwith::before {
+            content: "";
+            display: inline-block;
+            width: 20%;
+            border-bottom: 1px solid #aaa;
+            vertical-align: middle;
+            margin-right: 5%;
+        }
+
+        span.loginwith::after {
+            content: "";
+            display: inline-block;
+            width: 20%;
+            border-bottom: 1px solid #aaa;
+            vertical-align: middle;
+            margin-left: 5%;
+        }
+        a.aLogin  {
+            transition: all .3s ease;
+            cursor: pointer;
+            color: #333;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+        .noRegistrado{
+            margin-top: 2rem;
+        }
+        a.aLogin:hover {
+            /*text-decoration: underline;*/
+             text-decoration: none;
+        }
+
+        a.aLogin:hover svg {
+            cursor: pointer;
+            transition: all .3s ease;
+            stroke: var(--main-bg-color);
+        }
+
+        .body_login
+        {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            /* font-family: 'Belanosima', sans-serif; */
+            /* background-image: url(./../storage/login-register/gualazonwallhori.png)!important;; */
+            /* background-image: url('{{ asset("storage/icon-image-nav/bote-de-basura.png") }}'); */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .f-col
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        .f-row
+        {
+            display: flex;
+        }
+        .m-auto
+        {
+            margin: auto;
+        }
+        .mt-10
+        {
+            margin-top: 10px;
+        }
+        .mt-20
+        {
+            margin-top: 20px;
+        }
+        .mt-30
+        {
+            margin-top: 30px;
+        }
+        .mt-40
+        {
+            margin-top: 40px;
+        }
+        .mb-10
+        {
+            margin-bottom: 10px;
+        }
+        .mb-20
+        {
+            margin-bottom: 20px;
+        }
+        .mb-30
+        {
+            margin-bottom: 10px;
+        }
+        .mb-40
+        {
+            margin-bottom: 20px;
+        }
+        .heading-title {
+            font-family: "Playfair Display", "Times New Roman", Times, serif;
+        }
+        .darksoul-container
+        {
+            width: 500px;
+            height:30rem;
+            margin: auto;
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 1px 1px 20px rgb(228, 228, 228);
+            border-radius: 25px;
+            margin-top: 134px;
+        }
+        .square
+        {
+            width: 200px;
+            height: 30rem;
+            /* background: linear-gradient(268deg, #89bcfe 0%, #1d2129 100%); */
+            /* background: linear-gradient(268deg, #C56AE9 0%, #1d2129 100%); */
+            /* background: linear-gradient(268deg, #33645b 0%, #3d795a 100%); last */
+            background: linear-gradient(268deg, #FFD1DD 50%, #CEF1EA 70%);
+            /* background: linear-gradient(400deg, #FFA500 0%, #089D77 50%, #E7610E 100%); */
+
+            box-shadow: 1px 1px 20px #757575;
+            z-index: 100;
+            margin: auto;
+            margin-left: -50px;
+            border-radius: 25px;
+            margin-right: 0px !important;
+            margin-bottom: 13rem!important;
+        }
+        .square h1
+        {
+            text-align: center;
+            color: white;
+        }
+        .darksoul-hover-fill-button
+        {
+            min-width:100px;
+            display: flex;
+            height: 40px;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid #CEF1EA;
+            background-color: #CEF1EA;
+            font-family: 'gualazonF';
+            cursor: pointer;
+            align-items: center;
+            justify-content: left;
+            margin-top: 1rem !important;
+            /* margin-bottom: 1rem; */
+
+        }
+        /* .color-fill
+        {
+            position: absolute;
+            margin-left: -7px;
+            width: 100px;
+            height: 1px;
+            background: linear-gradient(268deg, #9ccdb3 0%, #1d2129 100%);
+            visibility: hidden;
+        } */
+        /* .darksoul-hover-fill-button:hover .color-fill
+        {
+            visibility: visible;
+            width: 100px;
+            height: 40px;
+            border-radius: 5px;
+            transition: all 0.5s;
+            background: linear-gradient(268deg, #9ccdb3 0%, #1d2129 100%);
+        } */
+        .darksoul-hover-fill-button:hover
+        {
+            box-shadow: 1px 1px 20px #757575;
+            transition: all 1s;
+            background-color: #CEF1EA ;
+        }
+        .darksoul-hover-fill-button:hover p
+        {
+            color: black;
+            transition: all 0.3s;
+
+        }
+        .darksoul-hover-fill-button p
+        {
+            margin: auto;
+            font-size: larger;
+            z-index: 10;
+        }
+
+        .form-container
+        {
+            padding: 1rem;
+            width: 100%;
+        }
+        .darksoul-input
+        {
+            all: unset;
+            /* border-bottom: 1px solid rgba(0, 0, 0, 0.259); */
+            /* padding-bottom: 5px; */
+            background-color: white;
+            font-size: medium;
+            font-weight: 200 !important;
+            width: 100%;
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover,
+        input:-webkit-autofill:focus,
+        input:-webkit-autofill:active
+        {
+            -webkit-box-shadow: 0 0 0 30px white inset !important;
+        }
+        .darksoul-password
+        {
+            width: 100%;
+        }
+        .darksoul-password:hover .eye-icon
+        {
+            visibility: visible;
+        }
+        .eye-icon
+        {
+            visibility: hidden;
+            z-index: 100;
+            margin-left: 10px;
+        }
+        .eye-icon:hover
+        {
+            cursor: pointer;
+        }
+        .naruto-sign1
+        {
+            cursor: pointer;
+            filter: drop-shadow(1px 1px 1px black);
+            display: block;
+            /* width: 150px; */
+            height: 100px;
+            position: absolute;
+            /* margin-bottom: auto; */
+            bottom: 94px;
+            margin-left: auto;
+            left: 18px;
+            font-size: 7rem;
+            display: flex;
+            align-items: center;
+            z-index: 999;
+            font-size: 11rem;
+             color: #d6a769;
+        }
+        .logo_name_login{
+            display: none;
+        }
+        .naruto-sign2
+        {
+            letter-spacing: 4px;
+            filter: drop-shadow(0px 1px 1px black);
+            width: 189px;
+            /* height: 150px; */
+            position: absolute;
+            margin-top: auto;
+            top: 50px;
+            margin-right: auto;
+            right: 100px;
+            color: #d6a769;
+            text-align: center;
+            /* transform: rotateZ(0deg);
+            animation-name: sign2-animate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+        }
+        .afri{
+    font-family: 'afri';
+}
+        @keyframes sign1-animate
+        {
+            0%{ transform: rotateZ(0deg);}
+            50%{transform: rotateZ(50deg);}
+            100%{ transform: rotateZ(0deg);}
+        }
+
+        @keyframes sign2-animate
+        {
+            0%{ }
+            100%{transform: rotateZ(360deg);}
+        }
+        @media only screen and (max-width: 900px)
+        {
+            .divremember{
+                margin-bottom: 1rem;
+            }
+            .noRegistrado{
+                margin-top: 0rem!important;
+            }
+            .botonRegistrarse{
+                margin-bottom: 1rem;
+            }
+            .darksoul-hover-fill-button{
+                margin-top: 0px!important;
+            }
+            .darksoul-password {
+                /* height: 3rem!important; */
+            }
+            .label-terms{
+                font-size: 10px;
+            }
+        }
+        @media only screen and (max-height: 740px)
+        {
+            .naruto-sign1{
+                font-size: 5rem;
+                left: auto;
+                right: 79px;
+            }
+        }
+        @media only screen and (max-width: 1200px)
+        {
+
+            .marhaban{
+                font-size: 4.5rem;
+            }
+            .logo_name_login{
+                width: 100%;
+                height: 6.5rem;
+                position: absolute;
+                bottom: 39px;
+                display: flex;
+                justify-content: center;
+                font-size: 4rem;
+                color:#33654b;
+                filter: drop-shadow(1px 1px 1px black);
+            }
+            .logo_name_login h1{
+                font-size: 7rem;
+                color: #d6a769;
+                cursor: pointer;
+            }
+            .naruto-sign1{
+                display: none;
+            }
+            .body_login
+            {
+                margin: 0;
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                /* font-family: 'Belanosima', sans-serif; */
+                /* background-image: url(./../storage/login-register/gualazonwallpaper1.png)!important;; */
+                /* background-image: url('{{ asset("storage/icon-image-nav/bote-de-basura.png") }}'); */
+                /* background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover; */
+                overflow: hidden;
+            }
+            .color-fill
+            {
+                margin-left: -6px!important;
+
+            }
+            span.loginwith::before {
+                content: "";
+                display: inline-block;
+                width: 20%;
+                border-bottom: 1px solid #aaa;
+                vertical-align: middle;
+                margin-right: 5%;
+            }
+
+            span.loginwith::after {
+                content: "";
+                display: inline-block;
+                width: 20%;
+                border-bottom: 1px solid #aaa;
+                vertical-align: middle;
+                margin-left: 5%;
+            }
+            .darksoul-container
+            {
+                width: 80%;
+                height: 31rem;
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 1px 1px 20px rgb(228, 228, 228);
+                border-radius: 25px;
+                margin-top: 5.9rem !important;
+                margin-bottom: 1rem !important;
+                /* margin-left: 18px; */
+            }
+            .square
+            {
+                width: 150px;
+                height: 150px;
+                background: linear-gradient(268deg, #89bcfe 0%, #1d2129 100%);
+                box-shadow: 1px 1px 20px #757575;
+                z-index: 100;
+                margin: auto;
+                margin-top: -50px;
+                border-radius: 25px;
+                margin-bottom: 1rem!important;
+                margin-right: auto!important;
+                display: none;
+
+            }
+            /* .squareGrande{
+                display: none!important;
+            }
+            .squareMobil{
+                display: block!important;
+            } */
+            .form-container
+            {
+                margin: auto;
+                width: 80%;
+                /* height: 65%; */
+                margin-top: 0rem;
+                margin-bottom: 0px!important;
+                padding-bottom: 0px!important;
+            }
+            .form-login{
+                height: 62%;
+            }
+            .darksoul-hover-fill-button
+            {
+                /* margin: auto; */
+                margin-top: 20px;
+                display: flex;
+                width: 100px;
+                height: 40px;
+                border-radius: 5px;
+                outline: none;
+                border: 1px solid #CEF1EA;
+                background-color: #CEF1EA;
+                /* font-family: 'Belanosima', sans-serif; */
+                cursor: pointer;
+                align-items: center;
+                justify-content: left;
+                /* margin-bottom: 1rem; */
+
+            }
+            .naruto-sign1
+            {
+                /* width: 100px; */
+                position: absolute;
+                bottom: -15px;
+                left: 83px;
+                font-size: 3rem;
+
+            }
+            .naruto-sign2 {
+                /* width: 150px;
+                height: 150px; */
+                position: absolute;
+                /* margin-top: auto; */
+                top: 15px;
+                /* margin-right: auto; */
+                /* right: 102px; */
+                /* margin: 0 auto; */
+            }
+            }
+        /*tablet*/
+        @media only screen and (max-height: 360px) {
+            .naruto-sign1{
+                font-size: 4rem;
+            }
+            .darksoul-container {
+                width: 500px;
+                height: 22rem;
+                margin: auto;
+                display: flex;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 1px 1px 20px rgb(228, 228, 228);
+                border-radius: 25px;
+              }
+              .square{
+                height: 22rem;
+                display: flex;
+                flex-direction: column;
+              }
+              .noRegistrado{
+                display: none;
+              }
+              .dentroSquare{
+                display: block!important;
+                margin-top: auto;
+                margin-bottom: 1rem;
+              }
+        }
+        @media only screen and (max-width: 700px) and (max-height: 376px) {
+            .naruto-sign1 {
+                position: absolute;
+                bottom: -79px;
+            }
+        }
+        @media only screen and (max-width: 667px) and (max-height: 376px) {
+            .darksoul-container {
+                width: 500px;
+                height: 22rem;
+                margin: auto;
+                display: flex;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 1px 1px 20px rgb(228, 228, 228);
+                border-radius: 25px;
+              }
+              .square{
+                height: 22rem;
+
+              }
+              .noRegistrado{
+                display: none;
+
+              }
+
+        }
+        .disclaimer
+        {
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            margin-left: auto;
+            right: 0;
+            margin-right: auto;
+            width: fit-content;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        .disclaimer a
+        {
+            text-decoration: none;
+            color: #202020;
+            font-family: "Kaushan Script", cursive;
+            font-weight: 900;
+        }
+        .disclaimer a:hover
+        {
+            text-decoration: overline;
+        }

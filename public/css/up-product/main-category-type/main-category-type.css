@@ -1,0 +1,107 @@
+.UploadStepTemplate {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #ECEFF1;
+}
+.UploadStepTemplate {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #ECEFF1;
+}
+.UploadStepTemplate__title{
+    color: #253238;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+
+    font-size: 1.25rem;
+    line-height: 28px;
+    color: #29363d;
+    margin-bottom: 12px;
+}
+.UploadStepTemplate:hover + #adjacentDiv2 {
+    display: block; /* Muestro cuando se hace hover en UploadStepTemplate */
+}
+.types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* font-size: .625rem; */
+}
+.types .type{
+    display: grid;
+    /* color: #607d8b;
+    text-transform: uppercase;
+    font-weight: 700; */
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    /* font-family: sans-serif!important; */
+}
+.types .type:first-of-type .square_main_category_type{
+    width: 218px;
+}
+.types .type .square_main_category_type{
+    width: 90px;
+    height: 90px;
+    border-radius: 15px;
+    background: #ECEFF1;
+    border: solid 2px transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    border: solid 1px #d1dbe0;
+}
+.anun-all{
+    width: 205px;
+    opacity: .5;
+}
+.anun-car, .anun-casas, .anun-servicios, .anun-empleo{
+    width:70px ;
+    opacity: .5;
+}
+.type:hover .square_main_category_type{
+    /* border: 2px solid grey; */
+    transform: scale(1.07);
+    /* border: 1px solid #82608b; */
+}
+.type:hover .anun-car{
+    opacity: 1!important;
+}
+.type:hover .anun-all{
+    opacity: 1!important;
+}
+.popover_body{
+    font-family: 'gualazonF';
+    background-color: #f2daf5;
+    color: #82608b;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: smaller;
+    margin-top: 15px;
+    font-size: 14px!important;
+}
+/*categorias principal activada*/
+.mainCategory_active{
+    background-color: #f2daf5!important;
+    /* background-color: #65A7FF!important; */
+    /* background-color: #91A2B5!important; */
+    /* background-color: #089D77 !important; */
+    /* background-color: #298fc2!important; */
+    /* box-shadow: 0 1px 4px #0006; */
+    transform: scale(1.07);
+
+    border: 1px solid #82608b!important;
+    /* border: 1px solid black !important; */
+}
+.mainCategory_active img{
+    opacity: 1;
+    /* filter: invert(1); */
+}
+.mainCategory_active .selectAlgoNonecesito{
+    /* opacity: 1!important; */
+}

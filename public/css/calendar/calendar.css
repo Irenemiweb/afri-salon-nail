@@ -1,0 +1,507 @@
+:root{
+    /* --outline-border-color: transparent;
+    --outline-border-size: 0px !important; */
+    /* --fc-border-color: black; */
+    --fc-daygrid-event-dot-width: 0px;
+}
+/*calendario toda pantalla box-shadow: 0 4px 8px 0 rgba(49, 47, 51, .1); */
+.fc .fc-scrollgrid-section-body table, .fc .fc-scrollgrid-section-footer table, #calendar,
+.fc-dayGridMonth-view, .fc-dayGridMonth-view table, .fc .fc-scroller-harness,.fc .fc-scroller, .fc .fc-daygrid-body {
+    /* border-bottom-style: hidden; */
+    height: 100%;
+}
+.border-warning2{
+    border: 1px solid #ff9400!important;
+}
+.paddingMensajeAlert{
+    padding-right: calc(.5rem * .5)!important;
+    padding-left: calc(.5rem * .5)!important;
+}
+button.fc-today-button:not([disabled]) {
+    font-weight: 900;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 28%);
+}
+.event-description, .event-time{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.fc-timegrid-slot-lane{
+    background-color: #fdfdfd!important;
+}
+.fc .fc-timegrid-slot-minor {
+    border-top-style: dashed!important;
+}
+/*elimina la primera línea inferior y todas las laterales*/
+.fc-theme-standard .fc-resourceTimeGridWeek-view table tbody tr:first-child td:first-child,
+.fc-theme-standard .fc-resourceTimeGridDay-view table tbody tr:first-child td:first-child{
+    border: 1px solid transparent !important;
+    border-top: none!important;
+}
+
+.fc-theme-standard table col {
+    width: 74px!important;
+}
+.fc-direction-ltr .fc-timegrid-slot-label-frame {
+    text-align: center;
+    display: block;
+    transform: translateY(-13px);
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.td_vacioImagen{
+    left: 1.20482%;
+    right: 1.20482%;;
+    width: 97.5904%;
+    height: 80px;
+    /* top: 0px; */
+    background-color: #fff;
+    background-image: url(https://d10n9ka7jp2kfo.cloudfront.net/pro/cd042c11/img/dayoff-pattern.499f3f6b.svg);
+    background-size: 18px 18px;
+    position: static;
+    bottom: -1px;
+}
+.fc-scrollgrid-section-body table{
+    background-color: white!important;
+}
+/*-------*/
+/* .fc-scrollgrid-section-body .fc-scroller{
+    overflow: hidden scroll!important;
+    height: calc(100vh - 17rem);
+} */
+.cienVh{
+    height: 100vh!important;
+    overflow-y: auto!important;
+}
+.fc-timegrid-event-harness > .fc-timegrid-event {
+
+    border: none !important;
+    /* background-color: pink !important; */
+    border-radius: 4px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important; */
+    /* margin-left: 1.5px; */
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }      /* Comienza en su posición original */
+    25% { transform: translateX(-10px); } /* Mover a la izquierda */
+    50% { transform: translateX(10px); }  /* Mover a la derecha */
+    75% { transform: translateX(-10px); } /* Mover a la izquierda */
+    100% { transform: translateX(0); }    /* Vuelve a la posición original */
+}
+
+.fc-event.temporal, .fc-event.temporal2 {
+    z-index: 9999;
+    border-style: dashed!important;
+    border-color: #bcbcc2!important;
+    border-top-width: 2px!important;
+    border-bottom-width: 2px!important;
+    border-right-width: 2px!important;
+    background-color: #fff!important;
+    background: #fff!important;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, .25);
+    border-left-width: 2px!important;
+    line-height: 1.3333333333em!important;
+    animation: shake 1s ease; /* 0.5 segundos de duración, con una curva de aceleración suave */
+    animation-iteration-count: 3; /* Repetir dos veces */
+    animation-delay: 2s; /* Pausa de 5 segundos entre las repeticiones */
+}
+.fc-timegrid-event .fc-event-time {
+    font-size: 12px!important;
+    font-weight: 700;
+}
+.fc-v-event .fc-event-title {
+    font-size: 13px!important;
+    font-weight: 600;
+}
+.fc-day-sun .fc-daygrid-day-number{
+    /* color: red; */
+}
+
+.fc-day-sun .fc-daygrid-day-events{
+    justify-content: end;
+    display: flex
+}
+.fc-day-sun .fc-daygrid-day-frame{
+    background: #f4f4f4 !important;
+}
+.fc-timegrid-axis{
+    border: none !important;
+    border-right: 1px solid #ddd !important;
+}
+.fc .fc-scrollgrid-section-sticky > * {
+    box-shadow: 0 4px 8px 0 rgba(49, 47, 51, .1);
+    padding: 9px;
+}
+.fc .fc-toolbar.fc-header-toolbar {
+    padding: 2rem 2rem 1rem 2rem;
+    /* padding-bottom: 1rem; */
+    margin-bottom: 0px!important;
+    /* border-bottom: 1px solid #ebebeb; */
+}
+.fc-direction-ltr .fc-button-group > .fc-button:not(:first-child) {
+    margin-left: 0.25em;
+}
+.fc-direction-ltr .fc-toolbar > * > :not(:first-child) {
+    margin-left: 0.25em;
+}
+.fc-toolbar-title{
+    font-size: 1rem!important;
+    font-weight: 600!important;
+    line-height: 2.5em!important;
+    text-transform: capitalize!important;
+    border: 1px solid #c7cbd4;
+    border-radius: 8px;
+    padding: 0px 12px;
+}
+.fc-toolbar-chunk{
+    display: flex;
+}
+.fc-daygrid-event.end_reserv{
+    background-color: pink;
+    opacity: 0.5;
+}
+.fc-prev-button:hover, .fc-next-button:hover{
+    /* background-color: #3d795a!important;
+    border-color: #3d795a!important; */
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 28%)!important;
+}
+/*modal*/
+.modalDetailsReserv{
+    font-size: medium!important;
+        font-family: 'gualazonF';
+        font-weight: normal !important;
+}
+/*+2*/
+.fc .fc-popover {
+    box-shadow: #ccc 0px 0px 20px 12px;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: white!important;
+    z-index: 9;
+}
+.fc-theme-standard .fc-popover-header {
+    background: transparent;
+}
+/* .fc .fc-daygrid-more-link {
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #686868;
+    font-weight: bold;
+} */
+.fc .fc-daygrid-more-link {
+    /* border-radius: 8px; */
+    padding: 7px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    background-color: #3d795a;
+    height: 35px;
+    font-weight: 600;
+}
+.fc .fc-daygrid-more-link:hover{
+    transform: scale(1.01);
+    background-color: #3d795a;
+}
+/*-----*/
+.fc-daygrid-day-bottom a{
+    text-decoration: none;
+    /* color: #686868; */
+}
+/*color hora y nombre evento*/
+.fc-direction-ltr .fc-daygrid-event .fc-event-time {
+    /* color: #686868; */
+    color: black;
+    font-weight: 600;
+}
+.fc-daygrid-dot-event .fc-event-title {
+    /* color: #686868; */
+    color: black;
+    white-space: nowrap;         /* No permitir saltos de línea */
+    overflow: hidden;            /* Ocultar el texto que desborda */
+    text-overflow: ellipsis;
+}
+.fc .fc-daygrid-day-frame {
+    /* min-height: auto!important; */
+}
+/*calendario redondeado y en el centro*/
+.cal-wrapper{
+    background:#fff;
+    /* max-width:1200px; */
+    margin:0 auto;
+    /* padding:20px; */
+    height: 100%;
+    /* border-radius:10px;
+    margin-top: 5px;
+    margin-left: 5px; */
+    /* margin:5px 5px 0px 5px ; */
+}
+/*las horas*/
+.fc-timegrid-slot-label[data-time*=":15"],
+.fc-timegrid-slot-label[data-time*=":30"],
+.fc-timegrid-slot-label[data-time*=":45"] {
+	font-size: 80%;
+	opacity: 0.5;
+	font-weight: 400;
+}
+/*hober*/
+.fc-timegrid-slots table tr:hover {
+	background: #fffae2 !important;
+	transition: all .15s ease;
+}
+th.fc-day-today:before {
+	content: 'Hoy';
+	font-size: 80%;
+	line-height: 1;
+	text-transform: uppercase;
+	opacity: 0.6;
+}
+/*para que queden alineados*/
+th.fc-day-future:before {
+	content: "\00a0";
+	font-size: 80%;
+	line-height: 1;
+	text-transform: uppercase;
+}
+th.fc-day-past:before {
+	content: '\00a0';
+	font-size: 80%;
+	line-height: 1;
+	text-transform: uppercase;
+	opacity: 0.6;
+}
+/* .fc-col-header-cell{
+    border: none!important;
+} */
+.fc-col-header-cell.fc-day.fc-day-mon,
+.fc-col-header-cell.fc-day.fc-day-tue,
+.fc-col-header-cell.fc-day.fc-day-wed,
+.fc-col-header-cell.fc-day.fc-day-thu,
+.fc-col-header-cell.fc-day.fc-day-fri,
+.fc-col-header-cell.fc-day.fc-day-sat {
+    border: 1px solid transparent !important;
+}
+.fc-col-header-cell.fc-day.fc-day-sun {
+    border-bottom: 1px solid transparent !important;
+    border-top: none!important;
+}
+.fc-list-day.fc-day a{
+    color: black;
+    text-decoration: none;
+}
+.fc-next-button .fc-button .fc-button-primary {
+    outline: none!important; /* Eliminar el contorno */
+}
+button.fc-prev-button:focus, button.fc-next-button:focus{
+    outline: none!important;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 28%)!important;
+}
+@media (min-width: 980px) {
+    /* #Citas_administrator{
+        height: calc(100vh - 4.3rem);
+    } */
+     .heigEspecifico{
+        height: 100%;
+     }
+}
+/*movil*/
+@media (max-width: 980px) {
+    .fc-daygrid-dot-event {
+        justify-content: center;
+    }
+    .fc .fc-daygrid-event{
+        height: 33px;
+    }
+    .fc-daygrid-dot-event .fc-event-title {
+        display: none;
+    }
+    #Citas_administrator{
+        height: 92.3vh;
+    }
+    .fc-toolbar-chunk:nth-of-type(1) {
+        display: none;
+    }
+    .fc-toolbar-chunk:nth-of-type(2){
+       margin-top: 0.5rem;
+    }
+    .fc-toolbar-chunk:nth-of-type(3) {
+        margin-top: 0.3rem;
+        margin-bottom: 0.5rem;
+     }
+    .fc-toolbar-chunk {
+        justify-content: center;
+    }
+    .tocaCampanita{
+        margin-left: 14px;
+    }
+    .fc .fc-daygrid-more-link {
+        padding: 4px;
+    }
+    .fc-direction-ltr .fc-daygrid-event .fc-event-time {
+        display: none;
+    }
+    .fc .fc-daygrid-day-frame {
+        height: 4rem;
+}
+.fc .fc-daygrid-day-number {
+    /* padding: 4px; */
+    padding: 0px!important;
+}
+.fc .fc-toolbar {
+    display: contents!important;
+}
+}
+.icon-arrow-right:before {
+    content: "\f10c";
+}
+/*vista día la reserva 50%*/
+.fc-timeGridDay-view .fc-timegrid-event-harness {
+    /* max-width: 49.8%; */
+  }
+.fc-v-event .fc-event-main {
+    color: black;
+    height: 100%;
+    padding: 4px 0px 4px 6px;
+  }
+.fc-timegrid-event, .fc-timegrid-more-link {
+    border: 1px solid rgb(193, 198, 196) !important;
+  }
+  /* .fc-theme-standard td, .fc-theme-standard th {
+    border: 1px solid var(--fc-border-color);
+} */
+.fc-theme-standard td, .fc-theme-standard th {
+    border-bottom: none!important;
+    /* background-color: white; */
+}
+.fc .fc-more-popover .fc-popover-body {
+    overflow: auto;
+    max-height: 10rem;
+}
+td[role="gridcell"] {
+
+    z-index: 9;
+    position: relative;
+    padding: 0px !important;
+    /*
+
+    */
+}
+/* .fc-resourceTimeGridWeek-view .fc-timegrid-col-frame{
+    border-right: 1px solid #ddd;
+    padding: 0px;
+} */
+/***/
+.fc-resourceTimeGridWeek-view .fc-col-header-cell-cushion, .fc-resourceTimeGridWeek-view .fc-col-header-cell.fc-resource{
+padding: 0px!important;
+width: 100%;
+border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+.fc-resourceTimeGridWeek-view .fc-col-header-cell-cushion .empleado_nombre{
+    /* display: block; */
+    width: 100%;
+    /* border-right: 1px solid #ddd!important; */
+}
+.fc .fc-scrollgrid-section-header.fc-scrollgrid-section-sticky > * {
+    padding: 0px!important;
+    padding-right: 0px !important;
+    padding-left: 0px!important;
+}
+.fc-resourceTimeGridWeek-view .fc-day-sun{
+    /* background-color: red; */
+    /* border-right: 1px solid #ddd!important; */
+}
+.fc-resourceTimeGridWeek-view td .fc-day .fc-day-sun{
+background-color: red;
+}
+.fc-resourceTimeGridWeek-view .fc-timegrid-col-frame{
+    border-right: 1px solid #ddd !important;
+}
+.fc-resourceTimeGridWeek-view .fc-day-sun .fc-timegrid-col-frame{
+    /* border-right: 3px solid #ddd !important; */
+}
+.fc .fc-timegrid-col.fc-day-today {
+    background-color: transparent!important;
+    padding: 0px!important;
+}
+.fc .fc-timegrid-col-frame {
+    border-right: 1px solid #ddd!important;
+}
+.fc-resourceTimeGridWeek-view .fc .fc-timegrid-now-indicator-container {
+    /* border-left: 1px solid #ddd!important; */
+}
+.fc-resourceTimeGridWeek-view .fc-day.fc-day-mon .fc-timegrid-col-frame{
+    /* border-left: 1px solid #ddd!important; */
+}
+#calendar .fc--button{
+    display: none;
+}
+.empleadoPlegarDia, .empleadoPlegarSemana, .empleadoAbrirDia, .empleadoAbrirSemana{
+    font-size: 16px;
+    top: 2px;
+    position: relative;
+    cursor: pointer;
+}
+.oculto {
+    display: none !important;
+}
+.thOculto{
+    width: 2rem!important;
+}
+.nombreFlechaPlegado{
+    display: none;
+    /* display: block;
+    width: 2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; */
+}
+.hideWeek{
+    display: none!important;
+}
+th.fc-day-today:before, th.fc-day-past:before, th.fc-day-future:before {
+    display: none!important;
+}
+.fc-resourceTimeGridWeek-view .fc-day-sun .fc-timegrid-col-frame{
+
+}
+.fc-day.fc-day-today div{
+    /* height: 100%!important; */
+}
+.calendarEstrecho {
+    width: calc(100vw - 29rem)!important; /* 100% del ancho de la pantalla menos 25rem */
+    transition: width 0.5s ease;
+  }
+  /*reducir tamaño horas en vista movil*/
+  @media (max-width: 768px) {
+    /* Reduce el ancho de la columna de horas */
+    .fc .fc-timegrid-slot-label.fc-scrollgrid-shrink {
+      width: 40px !important;
+      min-width: 40px !important;
+      max-width: 40px !important;
+
+    }
+    .fc .fc-timegrid-slot-label-frame,
+    .fc .fc-scrollgrid-shrink-frame {
+      padding: 0 !important;
+      margin: 0 !important;
+      width: 100% !important;
+    }
+    .fc .fc-timegrid-slot-label-cushion,
+    .fc .fc-scrollgrid-shrink-cushion {
+      /* font-size: 10px !important; */
+      padding: 0 2px !important;
+      white-space: nowrap;
+      text-align: left;
+      display: block;
+      width: 100%;
+    }
+    .fc-resourceTimeGridDay-view colgroup col{
+        width: 32px!important;
+    }
+  }
+
+/**/

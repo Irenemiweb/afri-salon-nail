@@ -1,0 +1,163 @@
+html{
+    overflow: hidden;
+}
+.modal-backdrop {
+    z-index: 1045!important; /* Valor estándar de Bootstrap */
+    /* display: none; */
+}
+.modal-dialog {
+    z-index: 1050!important; /* Valor estándar de Bootstrap, mayor que modal-backdrop */
+}
+
+/*input float*/
+.form-label-group.outline input:not(:placeholder-shown ){
+    border-bottom: 1px solid #aaaaaa87 !important;
+}
+.form-label-group.outline input:focus{
+    border-bottom: 1px solid #5c7a89!important;
+}
+/*-----------*/
+.despuesAbajo{
+    content: '';
+    border: 10px solid transparent;
+    border-bottom: 10px solid #607d8b;
+    position: relative;
+    right: 11px;
+    bottom: 14px;
+}
+.despuesAbajoBlanco{
+    content: '';
+    border: 10px solid transparent;
+    border-bottom: 10px solid white;
+    position: relative;
+    right: 11px;
+    bottom: 14px;
+}
+.despuesAbajoRosa{
+    content: '';
+    border: 10px solid transparent;
+    border-bottom: 10px solid #82608b;
+    position: relative;
+    right: 11px;
+    bottom: 14px;
+}
+.despuesAbajoNegro{
+    content: '';
+    border: 10px solid transparent;
+    border-bottom: 10px solid black;
+    position: relative;
+    right: 11px;
+    bottom: 14px;
+}
+.despuesAbajoGris{
+    content: '';
+    border: 10px solid transparent;
+    border-bottom: 10px solid black;
+    position: relative;
+    right: 11px;
+    bottom: 14px;
+}
+
+/*lista ul ocupe todo alto de un div*/
+.full-height-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+div.label{
+    height: 31.05px;
+}
+/*FLOATING LABELS*/
+.form-groupInput {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .form-groupInput input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease;
+  }
+  .form-groupInput label:hover{
+cursor: pointer;
+  }
+  .form-groupInput label {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    color: #8c8b88;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: top 0.5s ease, font-size 0.5s ease, color 0.5s ease;
+  }
+  .form-groupInput input:focus {
+    border-color: black;
+    outline: none;
+  }
+  .form-groupInput input:hover{
+    border-color: black;
+    cursor: pointer;
+  }
+  .form-groupInput input:focus + label,
+  .form-groupInput input:not(:placeholder-shown) + label {
+    top: -9px;
+    /* color: #8c8b88; */
+    color: black;
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    padding: 0 4px;
+    border-radius: 4px;
+    left: 8px;
+  }
+
+/*POPUP*/
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    padding: 15px;
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+}
+.popup.show {
+    display: block;
+}
+.chosen-container-single .chosen-single:hover{
+    border: 1px solid black;
+}
+.chosen-container-single .chosen-single{
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0 0 3px transparent inset, 0 1px 1px rgba(0, 0, 0, 0);
+    box-shadow: none!important;
+}
+.select2-container--default .select2-selection--single {
+    /* border: 1px solid #dee2e6; */
+    border: 1px solid #ccc;
+    padding: 8px!important;
+}
+/*cambiar curz offcavas por flecha*/
+.offcanvasBottomCategory.btn-close, .canvasCategorybtn.btn-close{
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    /* --bs-btn-close-bg:  url('')!important; */
+    /* background-image: url(./../storage/offCanvas/arrow-left.svg)!important; */
+/* --bs-btn-close-bg: url(./../../storage/offCanvas/arrow-left.svg) !important;
+    font-size: 1.5rem;
+    left: 27px;
+    position: absolute;
+    padding: 0px !important;
+    margin: 0px !important;
+    top: 19px;
+    --bs-btn-close-opacity: 1!important; */
+
+}

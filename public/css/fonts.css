@@ -1,0 +1,265 @@
+
+
+@font-face {
+    font-family: 'afri';
+    /* src: url('{{ asset("fonts/Hero.otf") }}') format("opentype");  C:\xampp\htdocs\laravel\salon-manicura\public\fonts\KottaJakarta.ttf */
+    src: url('../fonts/afri.otf') format('opentype');
+}
+@font-face {
+    font-family: 'mya_regular';
+    /* src: url('{{ asset("fonts/Hero.otf") }}') format("opentype");  C:\xampp\htdocs\laravel\salon-manicura\public\fonts\KottaJakarta.ttf */
+    src: url('../fonts/mya_regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'mya_regular_coletilla';
+    /* src: url('{{ asset("fonts/Hero.otf") }}') format("opentype");  C:\xampp\htdocs\laravel\salon-manicura\public\fonts\KottaJakarta.ttf */
+    src: url('../fonts/mya_regualar_coletilla.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'HachiMaruPop';
+    /* src: url('{{ asset("fonts/Hero.otf") }}') format("opentype");  C:\xampp\htdocs\laravel\salon-manicura\public\fonts\HachiMaruPop.ttf */
+    src: url('../fonts/HachiMaruPop.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Hero';
+    /* src: url('{{ asset("fonts/Hero.otf") }}') format("opentype"); */
+    src: url('../fonts/Hero.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Claudia';
+    /* src: url('{{ asset("fonts/Hero.otf") }}') format("opentype"); */
+    src: url('../fonts/Claudia.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'glamourgirl.regular';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/glamourgirl.regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Benilla_Calligraphy';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/Benilla_Calligraphy.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Dolce_Gargia';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/Dolce_Gargia.otf') format('opentype');
+}
+@font-face {
+    font-family: 'kicking-limos.regular';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/kicking-limos.regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'livingston.sanserif';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/livingston.sanserif.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Beautiful_Dream';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/Beautiful_Dream.otf') format('opentype');
+}
+@font-face {
+    font-family: 'NorthGlamourDemoSans';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/NorthGlamourDemoSans.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Garet-Book';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/Garet-Book.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'gualazonC';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/gualazonC.woff') format('woff');
+}
+@font-face {
+    font-family: 'gualazonF';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/gualazonF.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'JanjiCinta';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/JanjiCinta.otf') format('opentype');
+}
+@font-face {
+    font-family: 'BruskestDEMO';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/BruskestDEMO.otf') format('opentype');
+}
+@font-face {
+    font-family: 'buala';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/buala.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Bubble';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/Bubble.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'marhaban';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/marhaban.otf') format('opentype');
+}
+@font-face {
+    font-family: 'amaquina';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/amaquina.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'blablaIcon';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/blablaIcon.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'claudia_script';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/claudia_script.otf') format('opentype');
+}
+@font-face {
+    font-family: 'good';
+    /* src: url('{{ asset("fonts/GLAMOURGIRL.TTF") }}') format("truetype"); */
+    src: url('../fonts/good.otf') format('opentype');
+}
+.afri{
+    font-family: 'afri';
+}
+.hachimaru{
+    font-family: 'HachiMaruPop';
+}
+.good{
+    font-family: 'good';
+}
+.floritundia{
+    font-family: 'mya_regular';
+    color: white;
+    top: 4px;
+    font-size: 3rem;
+    left: 4rem;
+    position: relative;
+
+
+}
+.floritundia_coletilla{
+    font-family: 'mya_regular_coletilla';
+}
+.claudia_script{
+    font-family: 'Claudia_script';
+    /* font-size: 3rem; */
+    /* color: #C56AE9; */
+    /* margin-left: 15px; */
+}
+.claudia{
+    font-family: 'Claudia';
+    font-size: 3rem;
+    /* color: #C56AE9; */
+    margin-left: 15px;
+}
+.blablaIcon{
+    font-family: 'blablaIcon';
+    font-size: 14px;
+}
+.amaquina{
+    font-family: 'amaquina';
+    /* font-size: 3rem; */
+    color: black;
+}
+.gualazonF{
+    font-family: 'gualazonF';
+}
+.gualazonC{
+    font-family: 'gualazonC';
+}
+.gradient-text {
+    font-size: 48px;
+    font-weight: bold;
+    /* background: linear-gradient(268deg, #89bcfe 0%, #1d2129 100%); */
+    /* background: linear-gradient(400deg, #BAE5F8 0%, #298fc2 50%, #1d2129 100%); */
+    background: linear-gradient(400deg, #F5608E 0%, #70AEFF 50%, #89BCFE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.jacinta{
+    font-family: 'JanjiCinta';
+    font-size: 2rem;
+    color: #298fc2;
+}
+.buala{
+    font-family: 'buala';
+    font-size: 2.5rem;
+    color: #298fc2;
+}
+.marhaban{
+    font-family: 'marhaban';
+    font-size: 2.5rem;
+    /* color: #298fc2; */
+    color: #65A7FF;
+}
+.buble_logo{
+    font-family: 'Bubble';
+    font-size: 2.5rem;
+    color: #298fc2;
+    margin-left: -10px;
+}
+.buble{
+    font-family: 'Bubble';
+}
+.demo{
+    font-family: 'BruskestDEMO';
+    font-size: 2rem;
+    color: #298fc2;
+}
+.nort{
+    font-family: 'NorthGlamourDemoSans'!important;
+    font-size: 2rem;
+    color: #298fc2;
+}
+.montse{
+    font-size: 15px!important;
+    font-family:'Montserrat-Medium' ;
+    font-weight: 500;
+}
+.marca{
+    font-family: 'Garet-Book'!important;
+    font-size: 2rem;
+    color: #298fc2;
+    font-weight: bolder;
+}
+.hero {
+    font-family: 'Hero';
+    font-size: large;
+}
+.glamour{
+    font-family: 'glamourgirl.regular';
+}
+.benilla
+{
+    font-family: 'Benilla_Calligraphy';
+}
+.dolce{
+    font-family: 'Dolce_Gargia';
+}
+.limos{
+    font-family: 'kicking-limos.regular';
+    font-size: 1.5rem;
+    margin-right: 2px;
+}
+.living{
+    font-family: 'livingston.sanserif';
+}
+.beauti
+{
+    font-family: 'Beautiful_Dream'!important;
+    font-size: 2rem;
+    color: #298fc2;
+    /* color: #3376ce; */
+}

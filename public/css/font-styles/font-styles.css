@@ -1,0 +1,35 @@
+.__title
+{
+    -webkit-font-smoothing: antialiased;
+    font-family: 'gualazonC';
+    font-size: 1.25rem;
+    line-height: 28px;
+    color: #29363d;
+    font-weight: 700;
+    margin: 0;
+}
+.__title_flojo
+{
+    -webkit-font-smoothing: antialiased;
+    font-family: 'gualazonF';
+    font-size: 1.25rem;
+    line-height: 28px;
+    color: #29363d;
+    font-weight: 700;
+    margin: 0;
+}
+.__small-title{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    font-family: 'gualazonC';
+    font-size: .75rem;
+    line-height: 16px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    font-weight: 700;
+    color: #607d8b;
+}
+

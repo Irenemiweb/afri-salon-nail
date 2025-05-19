@@ -1,0 +1,61 @@
+
+@media only screen and (max-width: 980px)
+{
+    .tabsResponsive .tablinks, .tabs.tabsResponsive .tablinksAdministrator{
+        justify-content: flex-start!important;
+    }
+    /* .tabs{
+        display: none!important;
+    } */
+   /* #wrapper{
+    display: none!important;
+   }
+   #responsive_wrapper{
+    display: flex!important;
+   } */
+   #tabsResponsiveid{
+        /* display: block!important; */
+        /* height: calc(100vh - 7.5rem) !important; */
+        height: 92%;
+        overflow: auto;
+        position: absolute;
+    z-index: 99;
+    width: 100%;
+    top: 0px;
+    overflow-x: hidden;
+    }
+    .tabs.tabsResponsive #profilePhoto, #profilePhotoAdmin{
+        width: 80px !important;
+        height: 80px !important;
+    }
+    .tablinks:before, .tablinksAdministrator:before{
+        background-image: none!important;
+    }
+    .tablinks p, .tablinksAdministrator p{
+        opacity: 1!important;
+        color: #253238!important;
+        font-family: hero;
+    }
+    .tabsResponsive .tablinks:not(:first-child), .tabsResponsive .tablinksAdministrator:not(:first-child) {
+        height: 3rem!important;
+    }
+    .text-saparator{
+        font-size: .75rem;
+        font-weight: 700;
+        color: #607d8b;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: 'Nunito';
+    }
+
+}
+#tabsResponsiveid{
+    display: none;
+}
+.separator{
+    align-content: end!important;
+    height: 2.8rem;
+}
+.separator h1{
+    height: 1rem;
+}

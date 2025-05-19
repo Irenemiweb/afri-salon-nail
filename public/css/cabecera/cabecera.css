@@ -1,0 +1,180 @@
+.navbarAdminPanel .dateUserListRedPoin {
+    left: 1rem !important;
+    bottom: 53px!important;
+}
+b.redPoinNewReserv {
+    color: red !important;
+    background: red !important;
+    border-radius: 50% !important;
+    width: 20px !important;
+    height: 20px;
+    position: absolute;
+    top: 19px;
+    /* left: 20px; */
+    display: block;
+    right: 4rem;
+  }
+  b.redPoinNewReservindex {
+    color: red !important;
+    background: red !important;
+    border-radius: 50% !important;
+    width: 20px !important;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    /* left: 20px; */
+    display: block;
+    right: 9rem;
+}
+#navbarSupportedContent a span{
+    font-family: 'gualazonF';
+}
+.navbarAdminPanel, .navbarIndex {
+    z-index: 0!important;
+    padding: 0.5rem 2rem 0.5rem 2rem!important;
+    /* background-image: url('./../../storage/cabecera/fondo-selva3.jpg'); */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    /* height: 100vh; */
+}
+.fondo_selva{
+    background-color: #3d795a;
+    /* background-image: url('./../../storage/cabecera/fondo-selva03.svg'); */
+    /* background-image: url('./../../storage/cabecera/fondo-selva01.jpeg'); */
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;  */
+}
+.enlaceVender:hover{
+    cursor: pointer;
+}
+/*boton vender*/
+.btn-gualazon{
+    border-radius: 27px;
+    /* background-color: #298fc2; */
+    /* background-color: #089D77; */
+    background-color: #65A7FF;
+    color:white;
+    /* background-color: #82608b;
+    color:#f2daf5; */
+}
+.btn-gualazon:hover,
+.imgCabecera:hover
+{
+    box-shadow: 0 1px 4px #cbcdd1!important;
+    transform: scale(1.05);
+}
+.mensajes:hover,
+.salir:hover{
+    transform: scale(1.05);
+}
+.text-gualazon a
+{
+    /* color: #5c7a89;
+    font-size: 0.7rem; */
+    font-family: 'Montserrat-Medium'!important;
+}
+.hamburguerResponsive{
+    display: none;
+}
+#navbarSupportedContent span{
+    display: inherit;
+}
+.menuMobilVersion{
+    display: none!important;
+}
+/*versión movil*/
+@media (max-width: 1081px) {
+    .spanInicioColetilla {
+        display: none;
+    }
+}
+
+
+@media (max-width: 980px) {
+    .listOfContactNotChat .dateUserListRedPoin {
+        bottom: 2rem!important;
+        left: 4px!important;
+    }
+    .redPoinNewReserv{
+        right: 25px!important;
+    }
+    #navbarSupportedContent .spanOcultarMovil{
+        display: none;
+    }
+    .menuMobilVersion{
+        display: flex!important;
+    }
+}
+@media (max-width: 780px) {
+    .redPoinNewReserv{
+        right: 0px!important;
+    }
+    .listOfContactNotChat .dateUserListRedPoin {
+        left: 18px !important;
+    }
+}
+@media (max-width: 900px) {
+    .claudia_script{
+        font-size: 5rem!important;
+    }
+    .floritundia_coletilla{
+        display: none;
+    }
+    .nombreSubmarca{
+        display: none!important;
+    }
+    .categorias-list{
+        overflow: auto;
+        padding-left: 6px!important;
+    }
+    .categorias-list svg{
+        display: none;
+    }
+    /* .navbarAdminPanel{
+        display: none!important;
+    } */
+    .hamburguerResponsive{
+        display: block;
+    }
+    #navbarSupportedContent{
+        /* display: none!important; */
+        /* justify-content: end !important; */
+    }
+    .navbarAdminPanel{
+        justify-content: space-between !important;
+    }
+    .navbar a .aplicationMarkResponsiv{
+        width: 40px;
+        height: 40px;
+    }
+    .navbar{
+        /* justify-content: center!important; */
+            /* height: 6.5rem !important; */
+    }
+    .categorias-div{
+        margin-bottom: 10px;
+    }
+    .nombreMarca span{
+        /* display: none!important; */
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+    .mascota svg{
+        width: 105px;
+    }
+    nav .mascota{
+        margin-right: 0px !important;
+    }
+    nav .mascota img{
+        /* width: 55px!important; */
+    }
+    nav{
+        padding: 6px!important;
+    }
+    .searchbox_SearchBox--header__x9wkQ{
+width: 100%!important;
+margin-left: 0px!important;
+    }
+}

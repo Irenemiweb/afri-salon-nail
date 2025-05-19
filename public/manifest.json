@@ -1,0 +1,23 @@
+{
+  "name": "Afri Nail art Studio - Salón de Uñas en Ourense",
+  "short_name": "Afri Nails",
+
+  "start_url": "/laravel/salon-manicura/public",
+  "display": "standalone",
+  "background_color": "#cef1ea",
+  "theme_color": "#cef1ea",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./../public/icons/android-launchericon-192-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./../public/icons/android-launchericon-512-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "afri-nail-art-studio",
+  "private_key_id": "772240160ec22ddae5dfb474b8159c0d9c606da5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCG3AS/Trs9aI3p\nfJRRBHnqdITSfE3PU+MniA87caZg1yAzA0laDqrDYO9SLTygUsTypdQJVmuzFPDx\nk5/iayvuXxi2wpka4wmFlhK8iTfpwfDWIVKdLJKtA7h7Lt4tWaxNO+F9vHIu3VtR\n1ez+jMKIHCyzFrK/no/fNBSFbdoJUaI8c+ZwF+WZiO7HpJyp2cfAe2LWg9knDq4h\nFPflJTVSxX2Dj4I0zH6pSFiyXcq+E4cy0R5OT4/Y39od99W5eDdZSKjFa6ixrbR9\nbyiW/YelZGHLzhm6VqYpOizvZ26YQZGS76hKfXX3QyUzP7fOHhdCzbsT9DAwER0c\ncG1wg4uhAgMBAAECggEABRXdj/aWFPYRCTxLaNVfC4+impVZZyIQr3hFVXEvBvkr\nG6wEuMKo1H6enQiw/+gJyTn7nvEv/9bK/IZxQbEs55Y/xlSG6tP46J1aI4XrzS16\nZCNpjB0W2DNgYjTIPV7jonNJnjDcVWwUz3yJAqhS2vMaXxPSCxZy8nByUv3Az8Jt\nn2J/64sbrQa4kuvyP7GrhA0vnS8COwxXTjPrSvyBVylzWimVWfwwpAh58ijAgRzt\n9F+dccmKEcM9Hd8pbumtjxu+NSXy4qLl6EGq1vdmvHZVxbZwjLBxiUYk05ju2J+h\nU0l5+wIDTapApA1xesWRRPCiQde5os2q9KBVGbIMaQKBgQC8HBQ6Ysi33J3gxgr1\nAwPZgez6bRVaQJiF5CGJ0NhREbN4uaHV3qNi72JRaGDyiNAxT2R+j9mYn2afiqkT\n0yeyeCucoqC3Sy1AFWEdXU044kLdNHM2P54n2X2NKBV2ovd27oC+vVmef8leUUj6\nXLnlpJ4isC4Sm2DaTwrkC/xcQwKBgQC3iASWOZuACrS/P1qNYK48GiimdQm7HQcT\nDMJhsW3v0kmgavHvpO9Pfzif6V8dfN3HJcPdIUAvGJqzPmflzWhLng+VMZ/HJSAz\nKidGV8X0K+t9Z3m7CEHCJ/4DHJA2o+OgYfwk0otlsQwmOI31JqFxyi+trfHQhpqI\nUFYYjFMsSwKBgDch46vZGAsLVhpy8PMulwpA0jvzjLaPCCT13/6Mf1oDXh6cCZqt\nTiXJE3/Yn9F1188b/dA6SQQ6c9F+yl9NG+1q2x1lbMVL+0809OmuVtu9NOuwW7Qi\noS/8xpeAkAndabop3QIKbSHPQi2qlUELvFBaFx8Dk/1QHOrfD8oW2TgRAoGAeuHv\ncEYR/6ErdAGPN6nL/yHkpc8nPMkqu26Hl7Gc0j4SXf49Dx93u9qKp0cyECRSucxn\nX9+rgd0Pd4QJPKxTcI3cESCwwj3xWVCYC1kpiVr+yXBG6RuWK9FrGdo+FNeWyQPS\nNzVhcC0i3VRwd/vtjKq7UaZtihkVzr87ZiRObBECgYBhF6NsL20Lcx9l67IZEb6C\nkpB0UwDe4rBerjPHsVFN1a6kMtVmbRI3IxSbmyST+nin/LjrNZo1Yk3TAHSYHoLr\nHlgtW5IDxQAaXVjJm8eIPPSwpbvdieJtyeZZF3qIn7HoCdGUvqESy99N34e6+BFh\n78dyhJ6DcFHzrMU2nDj/Pg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@afri-nail-art-studio.iam.gserviceaccount.com",
+  "client_id": "102189576120912969276",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40afri-nail-art-studio.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
