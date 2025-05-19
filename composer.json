@@ -5,7 +5,7 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^8.0.2",
+        "php": "^8.1",
         "beyondcode/laravel-websockets": "^2.0@beta",
         "cboden/ratchet": "^0.4.4",
         "felipe-ps/jetstrap": "dev-main",
